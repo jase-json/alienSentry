@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Alien Sentry UI</title>
+</head>
+<body>
+    <header id="header">
+        <p> (A) </p>
+        <h3>UA 571-C<br/>REMOTE SENTRY WEAPON SYSTEM</h3>
+        <p> (A) </p>
+    </header>
+    <main>
+        <audio id="audio" controls style="display:none">
+            <source src="assets/sentry_02.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+        <div id="terminal">
+            <div id="left">
+                <!-- Rounds remaining wont wrap to new line -->
+                <div>Rounds Remaining</div>
+                <div>TIME AT 100% (secs)</div>
+            </div>
+            <div id="middle">
+                <div id="midTop">500</div>
+                <div id="midBottom">00.00</div>
+            </div>
+            <div id="right">
+                <div>Temp</div>
+                <div>R(M)</div>
+            </div>
+        </div>
+        <!-- Renders string to DOM on keypress -->
+        <div id="render"></div> 
+    </main>
+</body>
+</html>

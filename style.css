@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(17, 17, 17);
+    color: rgb(195, 228, 33);
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 5px;
+}
+
+#terminal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+#terminal > div {
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+}
+#left {
+    font-size: small;
+    text-align: center;
+}
+#left > div {
+    text-align: right;
+    margin: 10px;
+}
+
+#middle {
+    margin: 5px;
+}
+
+#midTop {
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    font-size: xx-large;
+}
+
+#midBottom {
+    margin: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+#cursor {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#header {
+    text-align: center;
+    border-style: solid;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+#header > h3 {
+    flex-grow: 4;
+}
+#header > p {
+    margin: auto;
+}
+
+#right {
+    display: flex;
+    flex: 10;
+    flex-direction: row;
+    margin: 20px;
+    align-items: flex-start;
+}
+#right > div {
+    margin: 20px;
+}
