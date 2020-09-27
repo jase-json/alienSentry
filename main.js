@@ -4,6 +4,7 @@ var COUNTER = 499;
 
 document.addEventListener("keypress", renderDom);
 document.addEventListener("keypress", bang);
+// document.addEventListener("keypress", reload); On keypress R
 
 function renderDom(){
     console.log("Pew");
@@ -13,4 +14,11 @@ function renderDom(){
 
 function bang(){
     document.getElementById("audio").play();
+}
+
+function reload(e) {
+    COUNTER = 500;
+    log.textContent += `${e.code}`;
+    // document.getElementById("audio2").play(); Add reload sound
+    document.querySelector("#midTop").innerHTML = COUNTER;
 }
