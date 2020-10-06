@@ -2,7 +2,6 @@ body {
     background-color: rgb(17, 17, 17);
     color: rgb(195, 228, 33);
     font-family: 'Press Start 2P', cursive;
-    margin-top: 5px;
 }
 
 #terminal {
@@ -14,14 +13,14 @@ body {
 #terminal > div {
     margin: 10px;
     text-align: center;
-    line-height: 200px;
 }
 #left {
+    display: grid;
     font-size: small;
     text-align: center;
+    margin: 5px;
 }
 #left > div {
-    text-align: right;
     margin: 10px;
 }
 
@@ -33,6 +32,7 @@ body {
     margin: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 10px;
     border-style: solid;
     font-size: xx-large;
 }
@@ -40,9 +40,9 @@ body {
 #midBottom {
     margin: 20px;
     margin-bottom: 20px;
+    padding: 10px;
     border-style: solid;
     font-size: xx-large;
-    padding: 10px;
 }
 
 #cursor {

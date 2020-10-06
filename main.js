@@ -1,24 +1,24 @@
 var COUNTER = 499;
-// keyboard events
-// keydown, keypress, keyup
 
 document.addEventListener("keypress", renderDom);
 document.addEventListener("keypress", bang);
-// document.addEventListener("keypress", reload); On keypress R
+document.addEventListener("keypress", reload);
 
 function renderDom(){
-    console.log("Pew");
+    //console.log("Pew");
     document.querySelector("#midTop").innerHTML = COUNTER;
     COUNTER--;
 }
 
-function bang(){
+function bang(event){
+    if (event.key != 'r')
     document.getElementById("audio").play();
 }
 
-function reload(e) {
-    COUNTER = 500;
-    log.textContent += `${e.code}`;
-    // document.getElementById("audio2").play(); Add reload sound
-    document.querySelector("#midTop").innerHTML = COUNTER;
+function reload(event){
+    if (event.key == 'r'){
+        COUNTER = 500;
+        // document.getElementById("audio2").play(); Add reload sound
+        document.querySelector("#midTop").innerHTML = COUNTER;
+    }
 }
