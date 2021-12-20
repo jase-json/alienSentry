@@ -1,7 +1,11 @@
 # alienSentry
 Replica UI from 'Aliens' Sentry Gun Scene
 
-Press any putton (other than "R" to shoot)
+Reference: https://www.youtube.com/watch?v=HQDy-5IQvuU&t=17s
+
+**USER GUIDE:**
+
+Press any button (other than "R" to shoot)
 
 Press "R" to reload
 
